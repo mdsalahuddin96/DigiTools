@@ -4,7 +4,7 @@ const Toggling = ({activeTab,setActiveTab}) => {
     
     
   return (
-    <div className="max-w-300 mx-auto flex flex-col text-center items-center mt-21.5 space-y-4 border-2 border-amber-300">
+    <div className="max-w-300 mx-auto flex flex-col text-center items-center mt-21.5 space-y-4">
       <h1 className="text-5xl font-extrabold">Premium Digital Tools</h1>
       <p className="text-[16px] text-[#627382]">
         Choose from our curated collection of premium digital products designed
