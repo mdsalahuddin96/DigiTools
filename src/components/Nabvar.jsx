@@ -72,7 +72,7 @@ const Nabvar = () => {
           <ShoppingCart />
         </div>
         <a className="text-[16px] font-semibold">Login</a>
-        <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none rounded-full">
+        <a className="btn text-[16px] font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none rounded-full">
           Get Started
         </a>
       </div>
