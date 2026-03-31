@@ -6,7 +6,7 @@
     "price": 19,
     "period": "monthly",
     "tag": "Popular",
-    "tagType": "popular",
+    "tagType": "Popular",
     "features": ["5TB Storage", "Real-time sync", "Advanced security", "Priority support"],
     "icon": "data:image/png;base64,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"
   },
@@ -17,7 +17,7 @@
     "price": 99,
     "period": "yearly",
     "tag": "New",
-    "tagType": "new",
+    "tagType": "New",
     "features": ["Code completion", "Bug detection", "Tailwind helper", "CLI tool"],
     "icon": "https://lucide.dev/api/icons/code-2"
   },
@@ -28,7 +28,7 @@
     "price": 49,
     "period": "one-time",
     "tag": "Best Seller",
-    "tagType": "best-seller",
+    "tagType": "Best-seller",
     "features": ["200+ Components", "Figma files included", "Lifetime updates", "Commercial license"],
     "icon": "https://lucide.dev/api/icons/layout-template"
   },
@@ -39,7 +39,7 @@
     "price": 12,
     "period": "monthly",
     "tag": "Sale",
-    "tagType": "new",
+    "tagType": "New",
     "features": ["Unlimited emails", "Drag & drop editor", "A/B testing", "Detailed analytics"],
     "icon": "https://lucide.dev/api/icons/mail"
   },
@@ -50,7 +50,7 @@
     "price": 29,
     "period": "yearly",
     "tag": "Secure",
-    "tagType": "popular",
+    "tagType": "Popular",
     "features": ["Shared vaults", "2FA authentication", "Audit logs", "Browser extension"],
     "icon": "https://lucide.dev/api/icons/shield-check"
   },
@@ -61,7 +61,7 @@
     "price": 150,
     "period": "one-time",
     "tag": "Expert Choice",
-    "tagType": "best-seller",
+    "tagType": "Best-seller",
     "features": ["Keyword research", "Backlink checker", "Rank tracker", "Competitor analysis"],
     "icon": "https://lucide.dev/api/icons/trending-up"
   },
@@ -72,7 +72,7 @@
     "price": 5,
     "period": "monthly",
     "tag": "Trending",
-    "tagType": "new",
+    "tagType": "New",
     "features": ["99.9% Uptime", "Free SSL", "One-click deploy", "DDoS protection"],
     "icon": "https://lucide.dev/api/icons/zap"
   },
@@ -83,7 +83,7 @@
     "price": 89,
     "period": "yearly",
     "tag": "Corporate",
-    "tagType": "popular",
+    "tagType": "Popular",
     "features": ["Infinite canvas", "Live collaboration", "Export to SVG", "Pre-built templates"],
     "icon": "https://lucide.dev/api/icons/users"
   }
