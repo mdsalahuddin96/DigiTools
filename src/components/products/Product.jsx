@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { Check } from "lucide-react";
-const Product = ({ product, selectedItem, setSelectedItem }) => {
+const Product = ({ product, cartItem, setCartItem }) => {
   const [isSelected,setIsSelected]=useState(false);
   const { name, description, tagType, price, period, features, icon } = product;
   const handleBuy=()=>{
-    const isExist=selectedItem.find(item=>item.id===product.id)
+    const isExist=cartItem.find(item=>item.id===product.id)
     if(isExist){
       alert('Already Selected!')
       return;
     }
-    const newItem=[...selectedItem,product]
-    setSelectedItem(newItem)
+    const newItem=[...cartItem,product]
+    setCartItem(newItem)
     setIsSelected(true)
   }
   return (
@@ -21,7 +21,7 @@ const Product = ({ product, selectedItem, setSelectedItem }) => {
         {tagType}
       </span>
       <div className="bg-[#F2F2F2] h-15 w-15 p-3.5 rounded-full flex justify-center items-center">
-        <img src={icon} alt={icon} />
+        <img className="h-10 w-10" src={icon} alt={icon} />
       </div>
       <div className="space-y-4 mt-4 grow">
         <h1 className="text-2xl font-bold">{name}</h1>
@@ -41,7 +41,7 @@ const Product = ({ product, selectedItem, setSelectedItem }) => {
           ))}
         </ul>
       </div>
-      <button className="btn text-[16px] font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none rounded-full mt-2" onClick={handleBuy}>{isSelected?'Added to cart':'Buy Now'}</button>
+      <button className={`btn text-[16px] font-bold text-white border-none rounded-full mt-2 ${isSelected?'bg-linear-to-r from-[#04944c] to-[#8dbb23]':'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`} onClick={handleBuy}>{isSelected?'Added to cart':'Buy Now'}</button>
     </div>
   );
 };

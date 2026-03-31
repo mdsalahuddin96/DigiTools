@@ -1,6 +1,6 @@
 import React from "react";
 import { ShoppingCart } from "lucide-react";
-const Nabvar = ({selectedItem, setActiveTab}) => {
+const Nabvar = ({cartItem, setActiveTab}) => {
   return (
     <div className="navbar max-w-300 mx-auto">
       <div className="navbar-start">
@@ -68,8 +68,8 @@ const Nabvar = ({selectedItem, setActiveTab}) => {
       </div>
       <div className="navbar-end gap-3">
         <div className="relative cursor-pointer" onClick={()=>setActiveTab('cart')}>
-          {selectedItem.length>0&&
-          <div className="flex justify-center items-center text-[12px] font-semibold bg-red-400 rounded-full w-4 h-4 absolute -top-2.5 -right-1 text-white">{selectedItem.length}</div>
+          {cartItem.length>0&&
+          <div className="flex justify-center items-center text-[12px] font-semibold bg-red-400 rounded-full w-4 h-4 absolute -top-2.5 -right-1 text-white">{cartItem.length}</div>
           }
           <ShoppingCart />
         </div>

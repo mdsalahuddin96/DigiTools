@@ -1,13 +1,12 @@
 import React from "react";
-import designTool from '@/assets/products/design-tool.png'
-const Cart = () => {
+const Cart = ({item}) => {
   return (
     <div className="flex justify-between items-center p-5 bg-[#F9FAFC] rounded-2xl">
       <div className="flex items-center gap-2">
-        <img src={designTool} />
+        <img className="h-10 w-10" src={item.icon} />
         <div>
-          <h1>Writing Ai Tool</h1>
-          <p>$29</p>
+          <h1>{item.name}</h1>
+          <p>${item.price}</p>
         </div>
       </div>
       <button className="btn btn-outline btn-error">Remove</button>

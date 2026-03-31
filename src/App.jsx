@@ -14,11 +14,11 @@ const fetchProducts = async () => {
 const productPromise = fetchProducts();
 function App() {
   const [activeTab, setActiveTab] = useState("product");
-  const [selectedItem,setSelectedItem]=useState([]);
+  const [cartItem,setCartItem]=useState([]);
   return (
     <>
       <header className="bg-base-100 shadow-sm sticky top-0">
-        <Nabvar selectedItem={selectedItem} setActiveTab={setActiveTab}></Nabvar>
+        <Nabvar cartItem={cartItem} setActiveTab={setActiveTab}></Nabvar>
       </header>
 
       {/* Banner section */}
@@ -32,13 +32,13 @@ function App() {
       </section>
       <main>
         {/* Toggling */}
-        <Toggling activeTab={activeTab} setActiveTab={setActiveTab}></Toggling>
+        <Toggling activeTab={activeTab} setActiveTab={setActiveTab} cartItem={cartItem}></Toggling>
         {activeTab === "product" && (
           <Suspense fallback={<p>Data loading...</p>}>
-            <Products productPromise={productPromise} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
+            <Products productPromise={productPromise} cartItem={cartItem} setCartItem={setCartItem} />
           </Suspense>
         )}
-        {activeTab === "cart" && <Carts></Carts>}
+        {activeTab === "cart" && <Carts cartItem={cartItem}></Carts>}
         <Start></Start>
         <Pricing></Pricing>
       </main>
