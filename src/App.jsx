@@ -8,7 +8,7 @@ import Carts from "./components/carts/Carts";
 import Start from "./components/Started/Start";
 import Pricing from "./components/pricing/Pricing";
 const fetchProducts = async () => {
-  const res = await fetch('/public/products.json');
+  const res = await fetch('/products.json');
   return res.json();
 };
 const productPromise = fetchProducts();
