@@ -3,7 +3,9 @@ import Banner from "./components/Banner";
 import Nabvar from "./components/Nabvar";
 import Stats from "./components/Stats";
 import Toggling from "./components/Toggling";
-import Products from "./components/Products";
+import Products from "./components/Products/Products";
+import Carts from "./components/Carts/Carts";
+import Start from "./components/Started/Start";
 const fetchProducts = async () => {
   const res = await fetch("../public/products.json");
   return res.json();
@@ -29,9 +31,13 @@ function App() {
       <main>
         {/* Toggling */}
         <Toggling activeTab={activeTab} setActiveTab={setActiveTab}></Toggling>
-        <Suspense fallback={<p>Data loading...</p>}>
-          <Products productsRes={productsRes} />
-        </Suspense>
+        {activeTab === "product" && (
+          <Suspense fallback={<p>Data loading...</p>}>
+            <Products productsRes={productsRes} />
+          </Suspense>
+        )}
+        {activeTab === "cart" && <Carts></Carts>}
+        <Start></Start>
       </main>
     </>
   );
