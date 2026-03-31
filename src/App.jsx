@@ -8,10 +8,10 @@ import Carts from "./components/carts/Carts";
 import Start from "./components/Started/Start";
 import Pricing from "./components/pricing/Pricing";
 const fetchProducts = async () => {
-  const res = await fetch("../public/products.json");
+  const res = await fetch('/public/products.json');
   return res.json();
 };
-const productsRes = fetchProducts();
+const productPromise = fetchProducts();
 function App() {
   const [activeTab, setActiveTab] = useState("product");
   return (
@@ -34,7 +34,7 @@ function App() {
         <Toggling activeTab={activeTab} setActiveTab={setActiveTab}></Toggling>
         {activeTab === "product" && (
           <Suspense fallback={<p>Data loading...</p>}>
-            <Products productsRes={productsRes} />
+            <Products productPromise={productPromise} />
           </Suspense>
         )}
         {activeTab === "cart" && <Carts></Carts>}
