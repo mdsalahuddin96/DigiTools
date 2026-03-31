@@ -1,16 +1,14 @@
 // import React, { useState } from "react";
 
+import Heading from "./Heading";
+
 const Toggling = ({activeTab,setActiveTab}) => {
-    
+  const title='Premium Digital Tools';
+  const description='Choose from our curated collection of premium digital products designed to boost your productivity and creativity.'
     
   return (
     <div className="max-w-300 mx-auto flex flex-col text-center items-center mt-21.5 space-y-4">
-      <h1 className="text-4xl md:text-5xl font-extrabold">Premium Digital Tools</h1>
-      <p className="text-[16px] text-[#627382]">
-        Choose from our curated collection of premium digital products designed
-        <br />
-        to boost your productivity and creativity.
-      </p>
+      <Heading title={title} description={description}/>
       <div className="flex">
         <button className={activeTab==='product'?'btn text-[16px] font-bold text-white border-none rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]':'btn text-[16px] font-bold border-none rounded-full'} onClick={()=>setActiveTab('product')}>
             Products

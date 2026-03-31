@@ -1,5 +1,6 @@
 import React from "react";
 import StartCard from "./StartCard";
+import Heading from "../Heading";
 const cardData=[
     {
         id:1,
@@ -21,14 +22,11 @@ const cardData=[
     }
 ]
 const Start = () => {
+    const title='Get Started in 3 Steps';
+    const description='Start using premium digital tools in minutes, not hours.';
   return (
     <div className="bg-[#F9FAFC] py-28 space-y-10">
-      <div className="max-w-300 mx-auto text-center space-y-4">
-        <h1 className="text-4xl md:text-5xl font-extrabold">Get Started in 3 Steps</h1>
-        <p className="text-[16px] text-[#627382]">
-          Start using premium digital tools in minutes, not hours.
-        </p>
-      </div>
+      <Heading title={title} description={description}/>
       <div className="max-w-300 mx-auto grid md:grid-cols-3 gap-7.5">
         {cardData.map(card=><StartCard key={card.id} card={card}></StartCard>)}
       </div>

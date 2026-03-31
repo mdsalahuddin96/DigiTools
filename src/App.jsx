@@ -3,9 +3,10 @@ import Banner from "./components/Banner";
 import Nabvar from "./components/Nabvar";
 import Stats from "./components/Stats";
 import Toggling from "./components/Toggling";
-import Products from "./components/Products/Products";
-import Carts from "./components/Carts/Carts";
+import Products from "./components/products/Products";
+import Carts from "./components/carts/Carts";
 import Start from "./components/Started/Start";
+import Pricing from "./components/pricing/Pricing";
 const fetchProducts = async () => {
   const res = await fetch("../public/products.json");
   return res.json();
@@ -38,6 +39,7 @@ function App() {
         )}
         {activeTab === "cart" && <Carts></Carts>}
         <Start></Start>
+        <Pricing></Pricing>
       </main>
     </>
   );
