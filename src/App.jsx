@@ -5,7 +5,7 @@ import Stats from "./components/Stats";
 import Toggling from "./components/Toggling";
 import Products from "./components/products/Products";
 import Carts from "./components/carts/Carts";
-import Start from "./components/Started/Start";
+import Start from "./components/started/Start";
 import Pricing from "./components/pricing/Pricing";
 const fetchProducts = async () => {
   const res = await fetch('/products.json');
@@ -14,10 +14,11 @@ const fetchProducts = async () => {
 const productPromise = fetchProducts();
 function App() {
   const [activeTab, setActiveTab] = useState("product");
+  const [selectedItem,setSelectedItem]=useState([]);
   return (
     <>
       <header className="bg-base-100 shadow-sm sticky top-0">
-        <Nabvar></Nabvar>
+        <Nabvar selectedItem={selectedItem} setActiveTab={setActiveTab}></Nabvar>
       </header>
 
       {/* Banner section */}
@@ -34,7 +35,7 @@ function App() {
         <Toggling activeTab={activeTab} setActiveTab={setActiveTab}></Toggling>
         {activeTab === "product" && (
           <Suspense fallback={<p>Data loading...</p>}>
-            <Products productPromise={productPromise} />
+            <Products productPromise={productPromise} selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
           </Suspense>
         )}
         {activeTab === "cart" && <Carts></Carts>}

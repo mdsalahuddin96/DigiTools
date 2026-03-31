@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Check } from "lucide-react";
-const Product = ({ product }) => {
+const Product = ({ product, selectedItem, setSelectedItem }) => {
+  const [isSelected,setIsSelected]=useState(false);
   const { name, description, tagType, price, period, features, icon } = product;
+  const handleBuy=()=>{
+    const isExist=selectedItem.find(item=>item.id===product.id)
+    if(isExist){
+      alert('Already Selected!')
+      return;
+    }
+    const newItem=[...selectedItem,product]
+    setSelectedItem(newItem)
+    setIsSelected(true)
+  }
   return (
     <div className="border-2 border-[#F1F1F1] rounded-2xl p-6 flex flex-col gap-2">
       <span
@@ -30,7 +41,7 @@ const Product = ({ product }) => {
           ))}
         </ul>
       </div>
-      <button className="btn text-[16px] font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none rounded-full mt-2">Buy Now</button>
+      <button className="btn text-[16px] font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white border-none rounded-full mt-2" onClick={handleBuy}>{isSelected?'Added to cart':'Buy Now'}</button>
     </div>
   );
 };
