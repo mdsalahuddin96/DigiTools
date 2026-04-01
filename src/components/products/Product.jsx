@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { Check } from "lucide-react";
-const Product = ({ product, cartItem, setCartItem }) => {
+import { toast } from "react-toastify";
+const Product = ({ product, cartItems, setCartItems}) => {
   const [isSelected,setIsSelected]=useState(false);
   const { name, description, tagType, price, period, features, icon } = product;
   const handleBuy=()=>{
-    const isExist=cartItem.find(item=>item.id===product.id)
+    const isExist=cartItems.find(item=>item.id===product.id)
     if(isExist){
-      alert('Already Selected!')
+      toast.error("Item already in cart!")
       return;
     }
-    const newItem=[...cartItem,product]
-    setCartItem(newItem)
+    toast.success("Added to cart successfully!")
+    const newItem=[...cartItems,product]
+    setCartItems(newItem)
     setIsSelected(true)
   }
   return (

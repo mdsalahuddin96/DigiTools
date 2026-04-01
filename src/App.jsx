@@ -7,18 +7,19 @@ import Products from "./components/products/Products";
 import Carts from "./components/carts/Carts";
 import Start from "./components/started/Start";
 import Pricing from "./components/pricing/Pricing";
+import Workflow from "./components/Workflow";
 const fetchProducts = async () => {
-  const res = await fetch('/products.json');
+  const res = await fetch("/products.json");
   return res.json();
 };
 const productPromise = fetchProducts();
 function App() {
   const [activeTab, setActiveTab] = useState("product");
-  const [cartItem,setCartItem]=useState([]);
+  const [cartItems, setCartItems] = useState([]);
   return (
     <>
       <header className="bg-base-100 shadow-sm sticky top-0">
-        <Nabvar cartItem={cartItem} setActiveTab={setActiveTab}></Nabvar>
+        <Nabvar cartItems={cartItems} setActiveTab={setActiveTab}></Nabvar>
       </header>
 
       {/* Banner section */}
@@ -32,15 +33,31 @@ function App() {
       </section>
       <main>
         {/* Toggling */}
-        <Toggling activeTab={activeTab} setActiveTab={setActiveTab} cartItem={cartItem}></Toggling>
+        <Toggling
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          cartItems={cartItems}
+        ></Toggling>
         {activeTab === "product" && (
           <Suspense fallback={<p>Data loading...</p>}>
-            <Products productPromise={productPromise} cartItem={cartItem} setCartItem={setCartItem} />
+            <Products
+              productPromise={productPromise}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+            />
           </Suspense>
         )}
-        {activeTab === "cart" && <Carts cartItem={cartItem}></Carts>}
+        {activeTab === "cart" && (
+          <Carts cartItems={cartItems} setCartItems={setCartItems}></Carts>
+        )}
         <Start></Start>
         <Pricing></Pricing>
+
+        {/* Workflow section */}
+        <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] border border-amber-200">
+          <Workflow></Workflow>
+        </section>
+        
       </main>
     </>
   );
