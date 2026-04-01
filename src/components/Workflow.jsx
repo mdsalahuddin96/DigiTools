@@ -2,7 +2,7 @@ import React from "react";
 
 const Workflow = () => {
   return (
-    <div className="max-w-300 my-28 mx-auto text-white flex flex-col justify-center items-center gap-10">
+    <div className="max-w-300 mx-auto text-white flex flex-col justify-center items-center gap-10">
       <div className="text-center space-y-4">
         <h1 className="text-4xl md:text-[40px] font-extrabold">Ready to Transform Your Workflow?</h1>
         <p >Join thousands of professionals who are already using Digitools to work smarter.<br/>Start your free trial today.</p>

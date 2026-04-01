@@ -8,6 +8,8 @@ import Carts from "./components/carts/Carts";
 import Start from "./components/started/Start";
 import Pricing from "./components/pricing/Pricing";
 import Workflow from "./components/Workflow";
+import Footerbody from "./components/footer/Footerbody";
+import Copyright from "./components/footer/Copyright";
 const fetchProducts = async () => {
   const res = await fetch("/products.json");
   return res.json();
@@ -54,11 +56,15 @@ function App() {
         <Pricing></Pricing>
 
         {/* Workflow section */}
-        <section className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] border border-amber-200">
+        <section className="bg-linear-to-r py-28 from-[#4F39F6] to-[#9514FA]">
           <Workflow></Workflow>
         </section>
         
       </main>
+      <footer className="bg-[#101727] pt-28">
+        <Footerbody></Footerbody>
+        <Copyright></Copyright>
+      </footer>
     </>
   );
 }

@@ -4,7 +4,7 @@ const Cart = ({item, cartItems, setCartItems}) => {
   const handleRemove=()=>{
       const filteredCartItem=cartItems.filter(cartItem=>cartItem.id!==item.id)
       setCartItems([...filteredCartItem])
-      toast.error('Item removed!')
+      toast.warning('Item removed!')
   }
   return (
     <div className="flex justify-between items-center p-5 border border-[#eaedf3] bg-[#F9FAFC] rounded-2xl">
