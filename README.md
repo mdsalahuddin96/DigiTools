@@ -1,19 +1,104 @@
-# Project Name: salauddin-digitools
+## 🧰 DigiTools
 
-# 🚀 Description  
+## 📖 Project Overview
 
-DigiTools is a modern, responsive web application designed for creators, developers, and teams to explore and purchase subscriptions for essential digital tools. Whether it's AI coding assistants, SEO analyzers, or design kits, DigiTools provides a seamless browsing experience with a clean, user-friendly interface.  
+**DigiTools** is a modern web-based utility platform that provides multiple useful digital tools in one place. The goal of this project is to make everyday online tasks easier by offering different productivity and utility features through a clean and user-friendly interface.
 
-# 🛠️ Tech Stack
-- **Frontend:** React.js(vite)
-- **Styling:** Tailwindcss, daisyUi
-- **Icon:** React icon, Lucide
-- **Alert:** React Toastify (NPM package)
-- **Data:** JSON
-- **Deployment:** Netlify
-# ✨ Features
-**1.** **Fully Responsive Navigation:** The Navbar is fully responsive for all screen sizes (Mobile, Tablet, and Desktop).On smaller screens, the menu items stay hidden behind a clean hamburger icon to save space. Clicking the cart icon in the navbar instantly displays the cart section, making it easy for users to see their selections.   
+Users can access several tools from a single platform without installing any additional software. The project focuses on simplicity, accessibility, and responsive design.
 
-**2.** **Products:** All products are loaded dynamically, ensuring a smooth and modern feel. Products are organized with tags like **Popular**, **New**, and **Best Seller** to help users find the best deals quickly.Each product clearly shows its price and subscription period (Monthly, Yearly, or One-time). Every product has a dedicated button to add it to the cart with a single click.  
+---
 
-**3.** **Cart**: Selected products are stored in the cart section so users can review them before buying. Users have the flexibility to remove any unwanted items from their list easily. Includes a "Proceed to Checkout" button that finishes the process and clears the cart, ready for the next session.
+## 🖼️ Screenshot
+
+<p align='center'>
+  <img src="https://github.com/user-attachments/assets/975074b9-b929-43c0-8226-0d1d2265f92c"/>
+</p>
+
+---
+
+## 🚀 Live Demo
+
+* 🔗 **Live Website:** https://salauddin-digitools.netlify.app/
+* 💻 **GitHub Repository:** https://github.com/mdsalahuddin96/DigiTools
+
+---
+
+## 🛠️ Main Technologies Used
+
+* HTML5
+* CSS3
+* Tailwind CSS
+* JavaScript (ES6+)
+* React.js
+
+---
+
+## ✨ Main Features
+
+* 🧰 Multiple useful digital tools in one platform
+* ⚡ Fast and responsive user interface
+* 📱 Mobile-friendly and responsive design
+* 🔍 Easy navigation between different tools
+* 🧑‍💻 Clean and simple UI for better user experience
+
+---
+
+## 📦 Dependencies
+
+Main dependencies used in this project:
+
+```
+react
+react-dom
+react-icon
+tailwindcss
+daisyui
+```
+---
+
+## ⚙️ How to Run the Project Locally
+
+Follow these steps to run the project on your local machine.
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/mdsalahuddin96/DigiTools.git
+```
+
+### 2️⃣ Navigate to the project directory
+
+```
+cd DigiTools
+```
+
+### 3️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 4️⃣ Start the development server
+
+```
+npm run dev
+```
+
+### 5️⃣ Open in browser
+
+```
+http://localhost:5173
+```
+
+---
+
+## 👨‍💻 Author
+
+**Md. Salauddin**
+
+* GitHub: https://github.com/mdsalahuddin96
+* LinkedIn: www.linkedin.com/in/md-salah-uddin96
+
+---
+
+⭐ If you like this project, feel free to **star the repository** on GitHub!
