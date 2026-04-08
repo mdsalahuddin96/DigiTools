@@ -11,7 +11,8 @@ Users can access several tools from a single platform without installing any add
 ## 🖼️ Screenshot
 
 <p align='center'>
-  <img src="https://github.com/user-attachments/assets/975074b9-b929-43c0-8226-0d1d2265f92c"/>
+  <img width="1792" height="592" alt="full-website" src="https://github.com/user-attachments/assets/975074b9-b929-43c0-8226-0d1d2265f92c" />
+  <img />
 </p>
 
 ---
