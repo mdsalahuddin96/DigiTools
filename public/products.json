@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "CloudSync Pro",
+    "description": "High-speed cloud storage with automated backup and end-to-end encryption.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "Popular",
+    "features": ["5TB Storage", "Real-time sync", "Advanced security", "Priority support"],
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNsb3VkLXN5bmMtaWNvbiBsdWNpZGUtY2xvdWQtc3luYyI+PHBhdGggZD0ibTE3IDE4LTEuNTM1IDEuNjA1YTUgNSAwIDAgMS04LTEuNSIvPjxwYXRoIGQ9Ik0xNyAyMnYtNGgtNCIvPjxwYXRoIGQ9Ik0yMC45OTYgMTUuMjUxQTQuNSA0LjUgMCAwIDAgMTcuNDk1IDhoLTEuNzlhNyA3IDAgMSAwLTEyLjcwOSA1LjYwNyIvPjxwYXRoIGQ9Ik03IDEwdjRoNCIvPjxwYXRoIGQ9Im03IDE0IDEuNTM1LTEuNjA1YTUgNSAwIDAgMSA4IDEuNSIvPjwvc3ZnPg=="
+  },
+  {
+    "id": 2,
+    "name": "DevFlow AI",
+    "description": "An AI-powered coding assistant that helps you write MERN stack code faster.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "New",
+    "features": ["Code completion", "Bug detection", "Tailwind helper", "CLI tool"],
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJyYWluLWljb24gbHVjaWRlLWJyYWluIj48cGF0aCBkPSJNMTIgMThWNSIvPjxwYXRoIGQ9Ik0xNSAxM2E0LjE3IDQuMTcgMCAwIDEtMy00IDQuMTcgNC4xNyAwIDAgMS0zIDQiLz48cGF0aCBkPSJNMTcuNTk4IDYuNUEzIDMgMCAxIDAgMTIgNWEzIDMgMCAxIDAtNS41OTggMS41Ii8+PHBhdGggZD0iTTE3Ljk5NyA1LjEyNWE0IDQgMCAwIDEgMi41MjYgNS43NyIvPjxwYXRoIGQ9Ik0xOCAxOGE0IDQgMCAwIDAgMi03LjQ2NCIvPjxwYXRoIGQ9Ik0xOS45NjcgMTcuNDgzQTQgNCAwIDEgMSAxMiAxOGE0IDQgMCAxIDEtNy45NjctLjUxNyIvPjxwYXRoIGQ9Ik02IDE4YTQgNCAwIDAgMS0yLTcuNDY0Ii8+PHBhdGggZD0iTTYuMDAzIDUuMTI1YTQgNCAwIDAgMC0yLjUyNiA1Ljc3Ii8+PC9zdmc+"
+  },
+  {
+    "id": 3,
+    "name": "DesignKit UI",
+    "description": "Premium library of React components and DaisyUI templates for developers.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "Best-seller",
+    "features": ["200+ Components", "Figma files included", "Lifetime updates", "Commercial license"],
+    "icon": "https://lucide.dev/api/icons/layout-template"
+  },
+  {
+    "id": 4,
+    "name": "MailPulse",
+    "description": "Automated email marketing platform for growing your tech newsletter.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Sale",
+    "tagType": "New",
+    "features": ["Unlimited emails", "Drag & drop editor", "A/B testing", "Detailed analytics"],
+    "icon": "https://lucide.dev/api/icons/mail"
+  },
+  {
+    "id": 5,
+    "name": "SecureVault",
+    "description": "Password manager and digital asset locker for development teams.",
+    "price": 29,
+    "period": "yearly",
+    "tag": "Secure",
+    "tagType": "Popular",
+    "features": ["Shared vaults", "2FA authentication", "Audit logs", "Browser extension"],
+    "icon": "https://lucide.dev/api/icons/shield-check"
+  },
+  {
+    "id": 6,
+    "name": "SEO Ninja",
+    "description": "Powerful SEO auditing tool to rank your React applications on Google.",
+    "price": 150,
+    "period": "one-time",
+    "tag": "Expert Choice",
+    "tagType": "Best-seller",
+    "features": ["Keyword research", "Backlink checker", "Rank tracker", "Competitor analysis"],
+    "icon": "https://lucide.dev/api/icons/trending-up"
+  },
+  {
+    "id": 7,
+    "name": "FastHost",
+    "description": "Optimized hosting for Vite and Next.js projects with global edge network.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "New",
+    "features": ["99.9% Uptime", "Free SSL", "One-click deploy", "DDoS protection"],
+    "icon": "https://lucide.dev/api/icons/zap"
+  },
+  {
+    "id": 8,
+    "name": "TeamCanvas",
+    "description": "Collaborative whiteboarding tool for planning IoT and MERN architectures.",
+    "price": 89,
+    "period": "yearly",
+    "tag": "Corporate",
+    "tagType": "Popular",
+    "features": ["Infinite canvas", "Live collaboration", "Export to SVG", "Pre-built templates"],
+    "icon": "https://lucide.dev/api/icons/users"
+  }
+]
